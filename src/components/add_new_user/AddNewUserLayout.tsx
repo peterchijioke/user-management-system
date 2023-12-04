@@ -16,7 +16,7 @@ const AddNewUserLayout = (props: Props) => {
         paddingTop: 50,
         gap: 20,
         // height: "60%",
-        paddingBottom: 50,
+        paddingBottom: 100,
         display: "flex",
         background: "#fff",
         borderRadius: 10,
