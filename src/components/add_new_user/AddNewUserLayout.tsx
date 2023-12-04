@@ -6,13 +6,20 @@ type Props = {};
 
 const AddNewUserLayout = (props: Props) => {
   return (
-    <PageLayout>
-      <div style={{ width: "95%" }}>
-        <TextInput placeholder="Name" />
-        <TextInput placeholder="Email" />
-        <TextInput placeholder="Email" />
-      </div>
-    </PageLayout>
+    <div
+      style={{
+        width: "70%",
+        alignItems: "center",
+        flexDirection: "column",
+        paddingTop: "20%",
+        gap: 20,
+        display: "flex",
+      }}
+    >
+      <TextInput placeholder="Name" />
+      <TextInput placeholder="Email" />
+      <TextInput placeholder="role" />
+    </div>
   );
 };
 
