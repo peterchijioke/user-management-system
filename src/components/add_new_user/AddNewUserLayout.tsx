@@ -1,6 +1,7 @@
 import React from "react";
 import PageLayout from "../common/PageLayout";
 import TextInput from "../common/TextInput";
+import Button from "../common/Button";
 
 type Props = {};
 
@@ -19,6 +20,7 @@ const AddNewUserLayout = (props: Props) => {
       <TextInput placeholder="Name" />
       <TextInput placeholder="Email" />
       <TextInput placeholder="role" />
+      <Button>Submit</Button>
     </div>
   );
 };
