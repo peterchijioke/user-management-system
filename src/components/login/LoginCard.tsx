@@ -9,6 +9,7 @@ import AppText from "../common/AppText";
 
 const LoginCard: React.FC = () => {
   const [email, setEmail] = useState();
+  const navigate = useNavigate();
   const [password, setPassword] = useState();
   const handleChange =
     (setState: React.Dispatch<React.SetStateAction<undefined>>) =>
@@ -21,7 +22,12 @@ const LoginCard: React.FC = () => {
       <AppText.LargeText>Login to UMS</AppText.LargeText>
       <TextInput onChange={handleChange(setEmail)} placeholder="Email" />
       <TextInput placeholder="Password" onChange={handleChange(setPassword)} />
-      <Button style={{ width: "80%", marginTop: 20 }}>Login</Button>
+      <Button
+        onClick={() => navigate("/dashboard")}
+        style={{ width: "80%", marginTop: 20 }}
+      >
+        Login
+      </Button>
     </InnerCard>
   );
 };
