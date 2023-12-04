@@ -8,7 +8,7 @@ const PageLayout = ({ ...props }) => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
-        paddingTop: 20,
+        paddingTop: 50,
       }}
       {...props}
     />
