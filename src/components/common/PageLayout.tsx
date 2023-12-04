@@ -9,8 +9,6 @@ const PageLayout = ({ ...props }) => {
         flexDirection: "row",
         justifyContent: "center",
         paddingTop: 20,
-        background: "#000",
-        height: "100dvh",
       }}
       {...props}
     />
